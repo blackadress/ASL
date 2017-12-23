@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Aprende Sin Límites</title>
+  
+  <link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">  
+  <link href="{{ url_for('static', filename = 'css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">  
+  <link href="{{ url_for('static', filename = 'css/sb-admin.css') }}" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="/">Aprende Sin Limites</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <!-- Navbar Derecha -->
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="/usuario/registro_usuario">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">Regístrate aquí</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="/usuario/inicio_sesion">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Inicia Sesión</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapsePrimaria" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">Nivel Primaria</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapsePrimaria">
+            <li>
+              <a href="/primaria/ciencia">Ciencias</a>
+            </li>
+            <li>
+              <a href="/primaria/historia">Historia</a>
+            </li>
+            <li>
+              <a href="/primaria/matematica">Matemática</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseSecundaria" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Nivel Secundaria</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseSecundaria">
+            <li>
+              <a href="/secundaria/ciencia">Ciencias</a>
+            </li>
+            <li>
+              <a href="/secundaria/economia">Economía</a>
+            </li>
+            <li>
+              <a href="/secundaria/historia">Historia</a>
+            </li>
+            <li>
+              <a href="/secundaria/matematica">Matemáticas</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseUniversitario" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Nivel Universitario</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseUniversitario">
+            <li>
+              <a href="/universidad/ciencia">Ciencias</a>
+            </li>
+            <li>
+              <a href="/universidad/economia">Economía</a>
+            </li>
+            <li>
+              <a href="/universidad/historia">Historia</a>
+            </li> 
+            <li>
+              <a href="/universidad/matematica">Matemáticas</a>
+            </li>           
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text">Link</span>
+          </a>
+        </li>
+      </ul>
+      <!-- Navbar toggler -->
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- Navbar de top -->
+      <ul class="navbar-nav ml-auto">
+        <div class="d-flex flex-row justify-content">
+        <div class="">
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0 mr-lg-2">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </li>
+		</div>
+		<div class="">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#Ingresar">
+          	<i class="fa fa-fw fa-sign-in"></i>Ingresar
+          </a>        	
+        </li class="nav-item">
+		</div>
+		<div class="">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#Salir">
+            <i class="fa fa-fw fa-sign-out"></i>Salir
+          </a>
+        </li>
+        </div>
+		</div>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      
+      <!-- Contenido de la página -->
+      {% block body %}
+      {% endblock %}
+
+      <div style="height: 1000px;"></div>
+    </div>
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Your Website 2017</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!--Cerrar sesión modal-->
+    <div class="modal fade" id="Salir" tabindex="-1" role="dialog" aria-labelledby="SalirLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="SalirLabel">Listo para salir?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Click en "Cerrar sesión" para teminar tu sesión.</div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="button" data-dismiss="modal">Cancelar</button>
+            <a class="btn btn-danger" href="index.html">Cerrar sesión</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!-- Ingresar modal -->
+    <div class="modal fade" id="Ingresar" tabindex="-1" role="dialog" aria-labelledby="IngresarLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="IngresarLabel">Datos de sesión</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          	<form>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Dirección correo electrónico</label>
+			    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Ingresa tu correo electrónico">
+			    <small id="email" class="form-text text-muted">Nunca le daremos tus datos a un tercero</small>
+			  </div>
+			  <div class="form-group">
+			    <label for="contraseña">Password</label>
+			    <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
+			  </div>
+			  <button type="submit" class="btn btn-primary">Submit</button>          		
+          	</form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/jquery.easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/sb-admin.min.js') }}"></script>
+  </div>
+</body>
+
+</html>
